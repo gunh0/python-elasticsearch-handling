@@ -1,7 +1,5 @@
 import logging
-import os
 
-from dotenv import load_dotenv
 from elasticsearch import Elasticsearch
 
 
@@ -11,15 +9,14 @@ logging.basicConfig(
     datefmt="%Y/%m/%d %H:%M:%S",
     level=logging.INFO,
 )
-load_dotenv()
-client = Elasticsearch("http://localhost:9200")
+es = Elasticsearch("http://localhost:9200")
 
 
 def es_query():
-    logging.info(client)
-    logging.info(client.info())
-    logging.info(client.cluster.health())
-    logging.info(client.cat.indices())
+    logging.info(es)
+    logging.info(es.info())
+    logging.info(es.cluster.health())
+    logging.info(es.cat.indices())
 
 
 if __name__ == "__main__":
