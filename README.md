@@ -12,6 +12,7 @@ Before running the project, you must have the following software installed on yo
 -   Docker Compose
 
 <br/>
+
 ### Installation
 
 ```bash
