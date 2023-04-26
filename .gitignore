@@ -1,3 +1,5 @@
 /venv
 
-/elasticsearch-data
+/esdata01
+/esdata02
+/esdata03
