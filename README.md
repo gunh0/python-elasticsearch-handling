@@ -66,6 +66,7 @@ multi-guide:
 -   `es.py` : This script creates an index in Elasticsearch, adds a document to the index, and searches for the document. If Elasticsearch is running correctly, the script should output the results of the search.
 
 <br/>
+
 ### Reference
 
 -   For more information about how to use Elasticsearch with Docker, see the official Elasticsearch Docker documentation: https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
