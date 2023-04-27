@@ -10,6 +10,7 @@ Before running the project, you must have the following software installed on yo
 
 -   Docker Engine
 -   Docker Compose
+-   Python 3.11.9
 
 <br/>
 
