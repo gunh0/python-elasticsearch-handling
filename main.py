@@ -10,8 +10,9 @@ logging.basicConfig(
 
 
 es = Elasticsearch(
-    "https://localhost:9200",
-    http_auth=("elastic", "p@ssw0rd1234"),  # Update with your ELASTIC_PASSWORD
+    # "https://localhost:9200", # guide8 use https
+    "http://localhost:9200",  # multi-node7 use http
+    basic_auth=("elastic", "p@ssw0rd1234"),  # Update with your ELASTIC_PASSWORD
     verify_certs=False,
 )
 

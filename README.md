@@ -8,9 +8,9 @@
 
 Before running the project, you must have the following software installed on your system:
 
--   Docker Engine
--   Docker Compose
--   Python 3.11.9
+- Docker Engine
+- Docker Compose
+- Python 3.11.9
 
 <br/>
 
@@ -42,32 +42,32 @@ docker-compose rm
 
 ### Usage
 
--   `Makefile`
+- `Makefile`
 
 ```bash
 multi7-up:
-	docker-compose -f docker-compose.multi-node7.yml up --build -d
+ docker-compose -f docker-compose.multi-node7.yml up --build -d
 
 multi7-down:
-	docker-compose -f docker-compose.multi-node7.yml down
+ docker-compose -f docker-compose.multi-node7.yml down
 
 multi8-up:
-	docker-compose -f docker-compose.multi-node8.yml up --build -d
+ docker-compose -f docker-compose.multi-node8.yml up --build -d
 
 multi8-down:
-	docker-compose -f docker-compose.multi-node8.yml down
+ docker-compose -f docker-compose.multi-node8.yml down
 
 multi8-log:
-	docker-compose logs -f docker-compose.multi-node8.yml -f
+ docker-compose logs -f docker-compose.multi-node8.yml -f
 
 multi-guide:
-	docker-compose -f docker-compose.guide8.yml up --build -d
+ docker-compose -f docker-compose.guide8.yml up --build -d
 ```
 
--   `es.py` : This script creates an index in Elasticsearch, adds a document to the index, and searches for the document. If Elasticsearch is running correctly, the script should output the results of the search.
+- `es.py` : This script creates an index in Elasticsearch, adds a document to the index, and searches for the document. If Elasticsearch is running correctly, the script should output the results of the search.
 
 <br/>
 
 ### Reference
 
--   For more information about how to use Elasticsearch with Docker, see the official Elasticsearch Docker documentation: https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
+- For more information about how to use Elasticsearch with Docker, see the official Elasticsearch Docker documentation: <https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html>
